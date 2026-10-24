@@ -1,7 +1,7 @@
 (kicad_symbol_lib
-	(version 20241209)
+	(version 20251024)
 	(generator "kicad_symbol_editor")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(symbol "10102166A812A"
 		(pin_names
 			(offset 1.016)
@@ -9,8 +9,12 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "J"
 			(at -7.62 28.702 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20,6 +24,8 @@
 		)
 		(property "Value" "10102166A812A"
 			(at -7.62 -33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29,66 +35,78 @@
 		)
 		(property "Footprint" "1Library:AMPHENOL_10102166A812A"
 			(at 0.508 36.068 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify bottom)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Micro SD express, 3 in 1 solution, push pull type, 30μin. gold, Height=1.55mm"
 			(at 0.762 36.576 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "DigiKey" "664-10102166A812ATR-ND"
 			(at 1.778 36.576 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify bottom)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "10102166A812A"
 			(at -3.81 36.322 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify bottom)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Amphenol"
 			(at -3.81 37.084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify bottom)
-				(hide yes)
 			)
 		)
 		(symbol "10102166A812A_0_0"
 			(rectangle
-				(start -7.62 -30.48)
-				(end 7.62 27.94)
+				(start -7.62 27.94)
+				(end 15.24 -30.48)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -98,27 +116,9 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 25.4 0)
-				(length 5.08)
-				(name "1"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at -12.7 22.86 0)
 				(length 5.08)
-				(name "2"
+				(name "PCIE_RST"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -136,7 +136,7 @@
 			(pin passive line
 				(at -12.7 20.32 0)
 				(length 5.08)
-				(name "3"
+				(name "CMD/RSPN"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -154,7 +154,7 @@
 			(pin passive line
 				(at -12.7 17.78 0)
 				(length 5.08)
-				(name "4"
+				(name "Supply_+3.3v"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -172,7 +172,7 @@
 			(pin passive line
 				(at -12.7 15.24 0)
 				(length 5.08)
-				(name "5"
+				(name "CLK"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -190,7 +190,7 @@
 			(pin passive line
 				(at -12.7 12.7 0)
 				(length 5.08)
-				(name "6"
+				(name "Supply_GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -208,7 +208,7 @@
 			(pin passive line
 				(at -12.7 10.16 0)
 				(length 5.08)
-				(name "7"
+				(name "PCIE_REFCLKp"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -226,7 +226,7 @@
 			(pin passive line
 				(at -12.7 7.62 0)
 				(length 5.08)
-				(name "8"
+				(name "PCIE_REFCLKn"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -244,7 +244,7 @@
 			(pin passive line
 				(at -12.7 5.08 0)
 				(length 5.08)
-				(name "9"
+				(name "Supply_+1.8v"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -262,7 +262,7 @@
 			(pin passive line
 				(at -12.7 2.54 0)
 				(length 5.08)
-				(name "10"
+				(name "Supply_GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -280,7 +280,7 @@
 			(pin passive line
 				(at -12.7 0 0)
 				(length 5.08)
-				(name "11"
+				(name "PCIE_TXp_(Host_to_Card)"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -298,7 +298,7 @@
 			(pin passive line
 				(at -12.7 -2.54 0)
 				(length 5.08)
-				(name "12"
+				(name "PCIE_TXn_(Host_to_Card)"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -316,7 +316,7 @@
 			(pin passive line
 				(at -12.7 -5.08 0)
 				(length 5.08)
-				(name "13"
+				(name "Supply_GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -334,7 +334,7 @@
 			(pin passive line
 				(at -12.7 -7.62 0)
 				(length 5.08)
-				(name "14"
+				(name "PCIE_RXn_(Card_to_Host)"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -352,7 +352,7 @@
 			(pin passive line
 				(at -12.7 -10.16 0)
 				(length 5.08)
-				(name "15"
+				(name "PCIE_RXp_(Card_to_Host)"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -370,7 +370,7 @@
 			(pin passive line
 				(at -12.7 -12.7 0)
 				(length 5.08)
-				(name "16"
+				(name "Supply_GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -388,7 +388,7 @@
 			(pin passive line
 				(at -12.7 -15.24 0)
 				(length 5.08)
-				(name "17"
+				(name "Supply_+1.2v"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -414,24 +414,6 @@
 					)
 				)
 				(number "DE"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 -22.86 0)
-				(length 5.08)
-				(name "SW"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "S-3"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -468,6 +450,24 @@
 					)
 				)
 				(number "S-2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -22.86 0)
+				(length 5.08)
+				(name "SW"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "S-3"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -530,6 +530,26 @@
 				)
 			)
 		)
+		(symbol "10102166A812A_1_0"
+			(pin passive line
+				(at -12.7 25.4 0)
+				(length 5.08)
+				(name "PCIE_CLKREQ"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+		)
 		(embedded_fonts no)
 	)
 	(symbol "MIC2230-GSYML-TR"
@@ -539,8 +559,12 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
 			(at 30.48 10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -549,6 +573,8 @@
 		)
 		(property "Value" "MIC2230-GSYML-TR"
 			(at 30.48 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -557,126 +583,106 @@
 		)
 		(property "Footprint" "1Library:MLF-12_YML_MCH-L"
 			(at 32.258 14.732 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "MIC2230-GSYML-TR"
 			(at 32.258 14.732 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Microchip Technology"
 			(at 31.496 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "MIC2230-GSYML-TR"
 			(at 31.496 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "DigiKey" "576-3276-1-ND"
 			(at 31.496 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_keywords" "MIC2230-GSYML-TR"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_fp_filters" "MLF-12_YML_MCH MLF-12_YML_MCH-M MLF-12_YML_MCH-L"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(symbol "MIC2230-GSYML-TR_0_1"
-			(pin input line
-				(at 0 0 0)
+			(pin output line
+				(at 60.96 -19.05 180)
 				(length 7.62)
-				(name "VIN"
+				(name "OUT2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 0 -2.54 0)
-				(length 7.62)
-				(name "AVIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 0 -5.08 0)
-				(length 7.62)
-				(name "EN1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -695,6 +701,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 0 -2.54 0)
+				(length 7.62)
+				(name "AVIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -738,6 +762,42 @@
 					)
 				)
 			)
+			(pin unspecified line
+				(at 60.96 -7.62 180)
+				(length 7.62)
+				(name "SW1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 0 0 0)
+				(length 7.62)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin output line
 				(at 60.96 -2.54 180)
 				(length 7.62)
@@ -756,17 +816,17 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 60.96 -7.62 180)
+			(pin input line
+				(at 0 -5.08 0)
 				(length 7.62)
-				(name "SW1"
+				(name "EN1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "8"
+				(number "11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -792,24 +852,6 @@
 					)
 				)
 			)
-			(pin output line
-				(at 60.96 -19.05 180)
-				(length 7.62)
-				(name "OUT2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
 		(symbol "MIC2230-GSYML-TR_1_1"
 			(rectangle
@@ -824,16 +866,16 @@
 				)
 			)
 			(pin unspecified line
-				(at 0 -13.97 0)
+				(at 60.96 -15.24 180)
 				(length 7.62)
-				(name "EPAD"
+				(name "SW2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "13"
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -860,9 +902,144 @@
 				)
 			)
 			(pin unspecified line
-				(at 60.96 -15.24 180)
+				(at 0 -13.97 0)
 				(length 7.62)
-				(name "SW2"
+				(name "EPAD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "TPS62402-Q1"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "PMIC"
+			(at 2.54 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "TPS62402-Q1_0_0"
+			(pin power_out line
+				(at 22.86 -3.81 180)
+				(length 2.54)
+				(name "ADJ2_(3.3)"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 22.86 -6.35 180)
+				(length 2.54)
+				(name "MODE/DATA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 22.86 -8.89 180)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 22.86 -11.43 180)
+				(length 2.54)
+				(name "FB1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -875,6 +1052,145 @@
 							(size 1.27 1.27)
 						)
 					)
+				)
+			)
+			(pin power_out line
+				(at 22.86 -13.97 180)
+				(length 2.54)
+				(name "DEF_1(1.8)"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -2.54 -13.97 0)
+				(length 2.54)
+				(name "SW1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -2.54 -11.43 0)
+				(length 2.54)
+				(name "EN1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -2.54 -8.89 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -2.54 -6.35 0)
+				(length 2.54)
+				(name "EN2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -2.54 -3.81 0)
+				(length 2.54)
+				(name "SW2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 -19.05 90)
+				(length 2.54)
+				(name "Thermal_Pad"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TPS62402-Q1_0_1"
+			(rectangle
+				(start 0 -1.27)
+				(end 20.32 -16.51)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
 				)
 			)
 		)

@@ -1,0 +1,81 @@
+(footprint "M.2 Mounting Hole"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "297a90c6-b9f6-43d9-9f21-fa0227a743ce")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7c2522a7-9966-4607-87cb-03f1c00bb1ad")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d0f4336f-33e7-4cdf-9ebb-0459cf99f3a1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "de263d3c-ff86-4f84-86c0-357bb7f53d4c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "MOUNTING-HOLE" thru_hole circle
+		(at 0 0)
+		(size 5.5 5.5)
+		(drill 3.5
+			(offset 0 0)
+		)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "dd96d61c-1c71-4bec-97ba-1c12bb5d2b09")
+		(padstack
+			(mode front_inner_back)
+			(layer "Inner"
+				(shape circle)
+				(size 5.5 5.5)
+				(thermal_bridge_angle 0)
+				(zone_connect -1)
+			)
+			(layer "B.Cu"
+				(shape roundrect)
+				(size 5.5 7)
+				(offset 0 0.75)
+				(roundrect_rratio 0.5)
+				(thermal_bridge_angle 0)
+				(zone_connect -1)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
