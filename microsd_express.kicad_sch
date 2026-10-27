@@ -4815,16 +4815,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 43.18) (xy 106.68 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4644d361-ea64-46c8-a3b8-02d594272fc3")
-	)
-	(wire
-		(pts
 			(xy 191.77 50.8) (xy 191.77 53.34)
 		)
 		(stroke
@@ -5465,6 +5455,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 43.18) (xy 106.68 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfa599d5-adc9-4cca-a971-c62079bf4545")
+	)
+	(wire
+		(pts
 			(xy 300.99 118.11) (xy 307.34 118.11)
 		)
 		(stroke
@@ -5512,6 +5512,16 @@
 			(type default)
 		)
 		(uuid "cc4eb2bf-e55a-4ed6-a827-edd2977aa9dd")
+	)
+	(wire
+		(pts
+			(xy 82.55 49.53) (xy 82.55 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce9c561e-12dd-442a-8d09-689b28c2519f")
 	)
 	(wire
 		(pts
@@ -5743,7 +5753,7 @@
 		)
 		(uuid "194320b7-4e50-49f5-9f9d-14061478e61f")
 	)
-	(label "PCIE_RX_N_CARD"
+	(label "PCIE_RX_CARD_N"
 		(at 60.96 125.73 0)
 		(effects
 			(font
@@ -5753,7 +5763,7 @@
 		)
 		(uuid "2aa3e0e0-7aeb-4559-9847-7dd98e97531e")
 	)
-	(label "PCIE_RX_P_CARD"
+	(label "PCIE_RX_CARD_P"
 		(at 60.96 128.27 0)
 		(effects
 			(font
@@ -5852,6 +5862,16 @@
 			(justify left bottom)
 		)
 		(uuid "705d7f00-92b8-4e2f-b496-89ebe822d590")
+	)
+	(label "PCIE_PWR_EN"
+		(at 82.55 49.53 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "83a37f50-5460-4124-b2cc-a9d9207dc2e3")
 	)
 	(label "PCIE_RX_N"
 		(at 238.76 81.28 0)

@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 2.1,
-          "width": 1.1
+          "drill": 3.5,
+          "height": 5.5,
+          "width": 5.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -211,7 +211,8 @@
       ],
       "track_widths": [
         0.0,
-        0.127
+        0.127,
+        0.2
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -532,15 +533,26 @@
         "wire_width": 6
       },
       {
+        "clearance": 0.2032,
         "diff_pair_gap": 0.15,
         "diff_pair_width": 0.12192,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "PCIE",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5885,
         "tuning_profile": "",
         "via_diameter": 0.55,
         "via_drill": 0.3
+      },
+      {
+        "name": "PCIE (diff_pair)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
